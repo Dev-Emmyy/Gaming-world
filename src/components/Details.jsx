@@ -36,7 +36,7 @@ function Details(){
 
     return (
         <Fragment>
-            <div id="bg_image" style={{backgroundImage : `url(${backgroundStyle})`,backgroundSize:'cover',backgroundRepeat: 'no-repeat',height: '1100px',backgroundPosition: 'center'}}>
+            <div id="bg_image" style={{backgroundImage : `url(${backgroundStyle})`,backgroundSize:'cover',backgroundRepeat: 'no-repeat',height: '1200px',backgroundPosition: 'center'}}>
             <div className="details_container">
                <div className="details_container_left">
                 <div className="details_timing_part">
