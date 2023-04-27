@@ -32,7 +32,7 @@ function Navbar() {
 
                         <div id="nav_link" className={!toggle? "mainBgColor" : "secondaryBgColor"}>
                         <NavLink to="/">
-                        <span>Top-Games</span>
+                        <span className="link">Top-Games</span>
                         </NavLink>
 
                         <NavLink to="/Action">

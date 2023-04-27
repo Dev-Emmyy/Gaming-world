@@ -74,6 +74,11 @@ a {
     width: 200px;
 }
 
+::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
 .nav_mode {
     display: flex;
     align-items: center;
@@ -144,8 +149,13 @@ a {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 100%;
     }
 
+    ::placeholder {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
     .navbar h2 {
         font-size: .9rem;
     }
@@ -172,7 +182,6 @@ a {
     }
 
     .nav_search {
-        display: none;
         align-items: center;
         background-color: aliceblue;
         color: #0000;
@@ -184,7 +193,7 @@ a {
     .nav_search input {
         border: none;
         outline: none;
-        width: 50px;
+        width: 100px;
     }
 
     .nav_mode {

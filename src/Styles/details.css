@@ -190,10 +190,10 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 8%;
+        top:5.8%;
         bottom: 0;
         background: rgba(0, 0, 0, .8);
-        height: 260%;
+        height: 300%;
         z-index: 1;
     }
 
