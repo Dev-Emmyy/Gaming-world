@@ -2,15 +2,15 @@ import { Fragment, useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { Container } from "./Navbar";
 import { useParams } from "react-router-dom";
-import logo from "./logo.png"
-import "../Styles/details.css"
-import {GoPrimitiveDot} from "react-icons/go"
+import logo from "./logo.png";
+import "../Styles/details.css";
+import {GoPrimitiveDot} from "react-icons/go";
 
 function Details(){
     const [detailsData,setDetailsData] = useState({});
     const {toggle} = useContext(Container);
     const backgroundStyle = `${detailsData.background_image}`
-    const {id} = useParams()
+    const {id} = useParams();
 
     const Api = `https://api.rawg.io/api/games/${id}`;
     const Apikey = "6c02bff12c9046f5ad4ed383d6af9c5f";
@@ -36,7 +36,8 @@ function Details(){
 
     return (
         <Fragment>
-            <div id="bg_image" style={{backgroundImage : `url(${backgroundStyle})`,backgroundSize:'cover',backgroundRepeat: 'no-repeat',height: '1200px',backgroundPosition: 'center'}}>
+            <div style={{backgroundImage : `url(${backgroundStyle})`,backgroundSize:'cover',backgroundRepeat: 'no-repeat',height: '1200px',backgroundPosition: 'center'}}>
+            <div className="details_overlay"></div>
             <div className="details_container">
                <div className="details_container_left">
                 <div className="details_timing_part">
