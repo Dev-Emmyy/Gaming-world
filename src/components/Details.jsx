@@ -1,10 +1,12 @@
 import { Fragment, useContext, useEffect, useState } from "react";
+import {AiFillLinkedin,AiOutlineTwitter,AiFillGithub} from "react-icons/ai"
 import axios from "axios";
 import { Container } from "./Navbar";
 import { useParams } from "react-router-dom";
 import logo from "./logo.png";
 import "../Styles/details.css";
 import {GoPrimitiveDot} from "react-icons/go";
+import BottomBg from "./btm_img.jpg";
 
 function Details(){
     const [detailsData,setDetailsData] = useState({});
