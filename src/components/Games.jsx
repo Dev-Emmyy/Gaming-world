@@ -37,8 +37,12 @@ function Games({id}){
 
     return (
         <Fragment>
-            <div className="games_container" id={!toggle? "secondaryBgColor" :  "mainBgColor"}>
-                {gamesData.map((games) => (
+           {loading ? ( // Render loading spinner if loading is true
+              <div className="loading-spinner"></div>
+            ) : (
+            <div id={!toggle? "secondaryBgColor" :  "mainBgColor"}>
+                <div className="games_container">
+                    {gamesData.map((games) => (
                     <Link to={`/${games.id}`} key={games.id} style={{textDecoration:"none"}} >
                     <div className="container" id={!toggle? "secondaryColor" :  "mainColor"}>
                      <img src={games.background_image} alt="background_image"/>
@@ -46,14 +50,15 @@ function Games({id}){
                     </div>
                     </Link>
                 ))}
+                </div>
 
                 <div className="bottom_bg" style={{
-              backgroundImage: `url(${backgroundImage})`,
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              height:"300px",
-            }}>
+                backgroundImage: `url(${backgroundImage})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                height:"300px",
+                }}>
                 <h2>Connect with me</h2>
                 <div className="iconContainer">
                     <a href="https://twitter.com/9gunna9">
@@ -67,10 +72,9 @@ function Games({id}){
                     </a>
                 </div>
                 <h2>Built by Dev-Emmy</h2>
+              </div>
             </div>
-            </div>
-
-            
+             )}
         </Fragment>
     )
 }
