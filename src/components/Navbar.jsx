@@ -14,7 +14,7 @@ import Sports from "./Sports";
 import Details from "./Details";
 
 import "../Styles/NavbarStyle.css";
-export const Container = React.createContext()
+export const Container = createContext()
 
 
 const API_URL = "https://api.rawg.io/api/games";
