@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
 }
 
 
@@ -80,7 +79,6 @@
 
 #mainColor {
     color: #333333;
-    background-color: #fff;
 }
 
 h4 {
