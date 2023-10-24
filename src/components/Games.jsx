@@ -46,9 +46,8 @@ function Games({id}){
                     </div>
                     </Link>
                 ))}
-            </div>
 
-            <div className="bottom_bg" style={{
+                <div className="bottom_bg" style={{
               backgroundImage: `url(${backgroundImage})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -69,6 +68,9 @@ function Games({id}){
                 </div>
                 <h2>Built by Dev-Emmy</h2>
             </div>
+            </div>
+
+            
         </Fragment>
     )
 }
